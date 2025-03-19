@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: lightblue;
+}
+.container {
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: auto;
+    max-height: 100%;
+    border-radius: 10px;
+}
+#mood-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.mood-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #5353bc;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 6px;
+    cursor: pointer;
+    flex-grow: 1;
+}
+.mood-card>div {
+    font-size: 50px;
+}
+.mood-card>span {
+    color: white;
+}
+.mood-comment-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.mood-comment-container > button {
+    background-color: blue;
+    padding: 3px 6px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.mood-comment {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.mood-comment > input {
+    outline: none;
+    padding: 3px 6px;
+}
+.modal {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    padding: 50px;
+
+}
+.close {
+    display: flex;
+    justify-content: flex-end;
+}
+.close > span {
+    font-size: 40px;
+    cursor: pointer;
+}
+.register-mood {
+    background-color: green;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 10px;
+    border: none
+}
+.emoji-name {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+.emoji-name>:nth-child(1) {
+    font-size: 40px;
+}
+.past-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    flex-grow: 1;
+    margin-top: 10px;
+}
+.date-delete {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.date-delete>:nth-child(2) {
+    background-color: maroon;
+    color: white;
+    padding: 3px 6px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.past-item-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
